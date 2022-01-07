@@ -5,7 +5,10 @@ public class SimpleSushiProject{
    public static void main(String [] args){
    
    Scanner keyboard = new Scanner(System.in);
-
+   final double CAL_PRICE = 5; 
+   final double SHRIMP_PRICE = 6;
+   final double TUNA_PRICE= 7; 
+   final double SALMON_PRICE = 8;
    int menu = 0; 
    
    String name = "";
@@ -26,7 +29,8 @@ public class SimpleSushiProject{
    switch (menu){
    
    case 1: 
-   System.out.println("You order california roll, I will done this in 3 minutes! ");
+   System.out.println("You order california roll, I will done this in 3 minutes! " + 
+                      "\n and it's " + CAL_PRICE );
    break; 
    
    case 2: 
@@ -46,20 +50,20 @@ public class SimpleSushiProject{
 
           
     if (item == 1){
-    price = 6;
+    price = SHRIMP_PRICE;
     System.out.printf("You order spicy shrim roll. Its $%.2f" , price);
     }
     else if (item == 2 ){
-    price = 7;
+    price = TUNA_PRICE;
     System.out.printf("You order spicy tuna roll. Its $%.2f" , price);
    }
 
    else if (item == 3){
-   price = 8;
+   price = SALMON_PRICE;
    System.out.printf("You order spicy salmon. It's $%.2f ", price );   
    }
    
-   System.out.println("\nWould you like to go over?");
+   System.out.println("\n\nWould you like to go over?");
    System.out.println("Please enter Y for yes or y for yes");
 
    input = keyboard.nextLine();
