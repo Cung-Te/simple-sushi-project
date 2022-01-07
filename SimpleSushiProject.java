@@ -47,8 +47,7 @@ public class SimpleSushiProject{
 
    }
       keyboard.nextLine();
-
-          
+     
     if (item == 1){
     price = SHRIMP_PRICE;
     System.out.printf("You order spicy shrim roll. Its $%.2f" , price);
